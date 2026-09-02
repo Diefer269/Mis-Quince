@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis Quince Años — Isabella</title>
+
+<!-- ============================================================
+     CÓMO PERSONALIZAR ESTA INVITACIÓN
+     Abre script.js y busca el bloque "DATOS EDITABLES" al inicio:
+     ahí cambias nombre, fecha, ubicación, etc. No necesitas
+     tocar el resto del código HTML/CSS/JS.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ================= PORTADA ================= -->
+  <section id="portada">
+    <div class="marco">
+      <div class="eyebrow" id="p-eyebrow">Con mucho cariño para</div>
+      <div class="invita-a" id="p-invitado">Familia González</div>
+      <div class="divider"></div>
+      <h1 id="p-nombre">Mis Quince Años</h1>
+      <div class="fecha-corta" id="p-fecha-corta">31 DE DICIEMBRE, 2030</div>
+    </div>
+    <div class="toca">Toca para abrir la invitación</div>
+  </section>
+
+  <!-- ================= CONTENIDO ================= -->
+  <div id="contenido">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="titulo-evento">Mis Quince Años</div>
+      <h1 id="h-nombre">Isabella Andrade</h1>
+      <p class="frase" id="h-frase">
+        &ldquo;Hoy comienza un nuevo capítulo, lleno de sueños por cumplir y momentos por vivir.&rdquo;
+      </p>
+    </section>
+
+    <!-- PADRES -->
+    <section id="padres">
+      <p class="intro">En compañía de mis padres</p>
+      <div class="nombres" id="pd-nombres">
+        Roberto Andrade<span class="y">&amp;</span>Carla Espinoza
+      </div>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section id="cuenta">
+      <div class="eyebrow" style="margin-bottom:12px;">Falta muy poco</div>
+      <h2>Cuenta regresiva</h2>
+      <div class="reloj">
+        <div class="bloque"><div class="num" id="c-dias">00</div><div class="lbl">Días</div></div>
+        <div class="bloque"><div class="num" id="c-horas">00</div><div class="lbl">Horas</div></div>
+        <div class="bloque"><div class="num" id="c-min">00</div><div class="lbl">Min</div></div>
+        <div class="bloque"><div class="num" id="c-seg">00</div><div class="lbl">Seg</div></div>
+      </div>
+    </section>
+
+    <!-- DETALLES: FECHA / HORA / LUGAR + MAPA -->
+    <section id="detalles">
+      <div class="eyebrow" style="margin-bottom:30px;">Detalles del evento</div>
+
+      <div class="detalle">
+        <div class="lbl">FECHA</div>
+        <div class="val" id="d-fecha">Martes 31 de diciembre, 2030</div>
+      </div>
+
+      <div class="detalle">
+        <div class="lbl">HORA</div>
+        <div class="val" id="d-hora">18:00</div>
+        <div class="sub">Recepción</div>
+      </div>
+
+      <div class="detalle">
+        <div class="lbl">LUGAR</div>
+        <div class="val" id="d-lugar">Salón Jardín Botánico</div>
+        <div class="sub" id="d-direccion">Av. Principal 123, Guayaquil</div>
+        <div class="mapa-cont">
+          <iframe id="d-mapa-iframe"
+            src="https://www.google.com/maps?q=Guayaquil,Ecuador&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="mapa-link" id="d-mapa-link" href="https://www.google.com/maps?q=Guayaquil,Ecuador" target="_blank" rel="noopener">
+          Abrir en Google Maps
+        </a>
+      </div>
+    </section>
+
+    <!-- CONFIRMACIÓN (sin botón) -->
+    <section id="confirmacion">
+      <div class="info-card">
+        <h2>Confirmación</h2>
+        <p>Espero con ansias compartir este día tan especial contigo y crear juntos recuerdos que atesoraré siempre. Agradezco de corazón que puedas confirmar tu asistencia.</p>
+        <div class="dato" id="conf-contacto">Confirma al +593 98 525 5380</div>
+      </div>
+    </section>
+
+    <!-- REGALO (sin botón) -->
+    <section id="regalo">
+      <h2>Regalo</h2>
+      <p style="max-width:340px;margin:0 auto;color:var(--marfil-2);font-size:15px;line-height:1.8;">
+        Tu presencia es el mejor regalo. Si deseas tener un detalle conmigo, con mucho gusto lo recibiré con cariño.
+      </p>
+    </section>
+
+    <footer>
+      Invitación creada con cariño &middot; <span id="f-anio">2026</span>
+    </footer>
+
+  </div>
+</div>
+
+<!-- Control de música -->
+<button id="control-musica" aria-label="Pausar o reproducir música" title="Música">
+  <svg viewBox="0 0 24 24">
+    <rect class="barra b b1" x="4"  y="8" width="2.4" height="8" rx="1.2"></rect>
+    <rect class="barra b b2" x="10.8" y="4" width="2.4" height="16" rx="1.2"></rect>
+    <rect class="barra b b3" x="17.6" y="8" width="2.4" height="8" rx="1.2"></rect>
+  </svg>
+</button>
+
+<audio id="audio-fondo" loop preload="none">
+  <!-- Coloca aquí tu archivo de música, por ejemplo: -->
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
