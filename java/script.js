@@ -14,7 +14,7 @@
     horaLegible:       "19:00",
   
     lugarNombre:      "Arriba Farmacia Keyla",
-    lugarDireccion:   "Ismael Pérez Castro, Guayaquil",
+    lugarDireccion:   "25 y Chember (Arriba de Farmacia Keyla)",
     // Coordenadas exactas del lugar (para centrar el mapa embebido)
     mapaQuery:        "-2.2091104,-79.9246065",
     // Link que abre el botón "Abrir en Google Maps"
@@ -51,12 +51,15 @@
   const btnMusica = document.getElementById('control-musica');
   
   portada.addEventListener('click', () => {
-    portada.classList.add('cerrando');
+    portada.classList.add('abriendo');
+    setTimeout(() => {
+      portada.classList.add('cerrando');
+    }, 450);
     setTimeout(() => {
       portada.style.display = 'none';
       contenido.classList.add('visible');
       audio.play().catch(() => { /* el navegador puede bloquear autoplay */ });
-    }, 600);
+    }, 1050);
   }, { once:true });
   
   // ---------- Animación al hacer scroll dentro de la invitación ----------
