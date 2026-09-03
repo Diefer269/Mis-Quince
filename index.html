@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mis Quince Años — Isabella</title>
+<title>Mis Quince Años — Adela</title>
 
 <!-- ============================================================
      CÓMO PERSONALIZAR ESTA INVITACIÓN
@@ -19,23 +19,66 @@
 </head>
 <body>
 
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="flor-decorativa" viewBox="0 0 80 80">
+      <g fill="var(--hoja)">
+        <path d="M40,52 C24,48 12,58 6,72 C22,73 34,66 40,52 Z"></path>
+        <path d="M40,50 C30,42 28,30 33,20 C40,28 42,42 40,50 Z" fill="var(--hoja-oscura)"></path>
+      </g>
+      <g transform="translate(40,32)">
+        <g fill="var(--rosa-suave)">
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(45)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(90)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(135)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(180)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(225)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(270)"></path>
+          <path d="M0,0 C-8,-8 -10,-22 0,-30 C10,-22 8,-8 0,0 Z" transform="rotate(315)"></path>
+        </g>
+        <g fill="var(--rosa)">
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(30)"></path>
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(90)"></path>
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(150)"></path>
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(210)"></path>
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(270)"></path>
+          <path d="M0,0 C-6,-6 -7,-16 0,-21 C7,-16 6,-6 0,0 Z" transform="rotate(330)"></path>
+        </g>
+        <circle r="5" fill="var(--rosa-fuerte)"></circle>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
 <div class="wrap">
 
-  <!-- ================= PORTADA ================= -->
+  <!-- ================= PORTADA (SOBRE) ================= -->
   <section id="portada">
-    <div class="marco">
-      <svg class="icono-corona" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M3 17h18"></path>
-        <path d="M3 17V9l5 3.5L12 4l4 8.5 5-3.5v8"></path>
-        <circle cx="3" cy="8" r="1" fill="currentColor" stroke="none"></circle>
-        <circle cx="12" cy="3" r="1.2" fill="currentColor" stroke="none"></circle>
-        <circle cx="21" cy="8" r="1" fill="currentColor" stroke="none"></circle>
-      </svg>
-      <div class="eyebrow" id="p-eyebrow">Con mucho cariño para</div>
-      <div class="invita-a" id="p-invitado">Familia Salazar Arreaga</div>
-      <div class="divider"><span class="gema"></span></div>
-      <h1 id="p-nombre">Mis Quince Años</h1>
-      <div class="fecha-corta" id="p-fecha-corta">12 DE SEPTIEMBRE, 19:00</div>
+    <div class="sobre">
+      <div class="sobre-solapa">
+        <svg viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="0,0 400,0 200,90"></polygon>
+        </svg>
+      </div>
+      <div class="marco">
+        <div class="sobre-sello">
+          <svg viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 17h18"></path>
+            <path d="M3 17V9l5 3.5L12 4l4 8.5 5-3.5v8"></path>
+            <circle cx="3" cy="8" r="1" fill="currentColor" stroke="none"></circle>
+            <circle cx="12" cy="3" r="1.2" fill="currentColor" stroke="none"></circle>
+            <circle cx="21" cy="8" r="1" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </div>
+        <div class="eyebrow" id="p-eyebrow">Con mucho cariño de:</div>
+        <div class="invita-a" id="p-invitado">Familia Salazar Arreaga</div>
+        <div class="divider"><span class="gema"></span></div>
+        <h1 id="p-nombre">Mis Quince Años</h1>
+        <div class="fecha-corta" id="p-fecha-corta">12 DE SEPTIEMBRE, 19:00</div>
+        <svg class="flor-esquina abajo-izq" aria-hidden="true"><use href="#flor-decorativa"></use></svg>
+        <svg class="flor-esquina abajo-der" aria-hidden="true"><use href="#flor-decorativa"></use></svg>
+      </div>
     </div>
     <div class="toca">Toca para abrir la invitación</div>
   </section>
@@ -97,8 +140,8 @@
 
       <div class="detalle">
         <div class="lbl">LUGAR</div>
-        <div class="val" id="d-lugar">Arriba de Farmacia Keyla</div>
-        <div class="sub" id="d-direccion">Ismael Pérez Castro, Guayaquil</div>
+        <div class="val" id="d-lugar">25 y Chember</div>
+        <div class="sub" id="d-direccion">(Arriba de Farmacia Keyla)</div>
         <div class="mapa-cont">
           <iframe id="d-mapa-iframe"
             src="https://www.google.com/maps?q=Guayaquil,Ecuador&output=embed"
