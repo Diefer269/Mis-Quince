@@ -13,8 +13,8 @@
     fechaLegible:      "Sábado 12 de Septiembre, 2026",
     horaLegible:       "19:00",
   
-    lugarNombre:      "Arriba Farmacia Keyla",
-    lugarDireccion:   "25 y Chember (Arriba de Farmacia Keyla)",
+    lugarNombre:      "25 y Chember ",
+    lugarDireccion:   "(Arriba de Farmacia Keyla)",
     // Coordenadas exactas del lugar (para centrar el mapa embebido)
     mapaQuery:        "-2.2091104,-79.9246065",
     // Link que abre el botón "Abrir en Google Maps"
