@@ -222,11 +222,27 @@ section{
   color:var(--marfil);
 }
 
-.marco .fecha-corta{
-  margin-top:22px;
-  font-size:15px;
-  letter-spacing:0.18em;
-  color:var(--rosa-suave);
+.icono-quince{
+  width:132px;
+  height:auto;
+  margin:20px auto 0;
+  display:block;
+  animation:flotar 3.4s ease-in-out infinite;
+}
+@keyframes flotar{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+}
+.icono-quince .destello{
+  transform-box:fill-box;
+  transform-origin:center;
+  animation:destello 1.8s ease-in-out infinite;
+}
+.icono-quince .d2{ animation-delay:0.5s; }
+.icono-quince .d3{ animation-delay:1s; }
+@keyframes destello{
+  0%,100%{ opacity:0.25; transform:scale(0.7); }
+  50%{ opacity:1; transform:scale(1.15); }
 }
 
 .toca{
@@ -425,6 +441,14 @@ section{
   color:var(--marfil-2) !important;
 }
 .icono-regalo{
+  width:38px;
+  height:38px;
+  margin:22px auto 0;
+  display:block;
+  color:var(--rosa);
+}
+
+.icono-admision{
   width:38px;
   height:38px;
   margin:22px auto 0;
