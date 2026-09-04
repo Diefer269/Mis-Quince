@@ -29,7 +29,6 @@
   
   // Pinta los datos en el DOM
   document.getElementById('p-invitado').textContent   = DATOS.invitado;
-  document.getElementById('p-fecha-corta').textContent = DATOS.fechaLegible.toUpperCase();
   document.getElementById('h-nombre').textContent      = DATOS.nombreQuince;
   document.getElementById('h-frase').textContent       = DATOS.fraseHero;
   document.getElementById('pd-nombres').innerHTML      = DATOS.padre + '<span class="y">&amp;</span>' + DATOS.madre;
